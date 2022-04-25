@@ -27,6 +27,10 @@
   color: #aec3e9;
 }
 
+.nav-link.active {
+  color: #377ef6;
+}
+
 .nav-link > * + * {
   margin-top: 4px;
 }
