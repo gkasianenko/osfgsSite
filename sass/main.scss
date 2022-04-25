@@ -1,0 +1,22 @@
+//Base
+@import "./base/base.scss";
+@import "./base/media.scss";
+@import "./base/vars.scss";
+
+//Blocks
+@import "./blocks/new-note.scss";
+@import "./blocks/info-item.scss";
+@import "./blocks/menu.scss";
+
+//Sections
+@import "./sections/header.scss";
+@import "./sections/info.scss";
+@import "./sections/news.scss";
+@import "./sections/search.scss";
+@import "./sections/tags.scss";
+@import "./sections/upcoming-events.scss";
+@import "./sections/category-pattern.scss";
+
+//Utilities
+@import "./utilities/titles.scss";
+@import "./utilities/buttons.scss";

@@ -1,0 +1,32 @@
+#menu {
+  position: sticky;
+  bottom: 0;
+  background-color: #f8f9fb;
+}
+
+.menu__wrapper {
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1;
+
+  color: #aec3e9;
+}
+
+.nav-link > * + * {
+  margin-top: 4px;
+}

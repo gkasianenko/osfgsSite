@@ -1,0 +1,70 @@
+.info .info__item {
+  padding: 14px;
+  display: block;
+
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.info .info__item-wrapper > * + * {
+  margin-top: 8px;
+}
+
+.info__item-content > * + * {
+  margin-top: 8px;
+}
+
+.info .info__top .info__item:nth-child(1) {
+  background: url(.././img/main/flag-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.info .info__top .info__item:nth-child(2) {
+  background-image: url(.././img/main/money-bg.png);
+  background-image: url(.././img/main/money-bg.png),
+    linear-gradient(-90deg, #023f8e -30%, #377ef6 64%);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  color: #fff;
+}
+
+.info__bottom > * + * {
+  margin-top: 16px;
+}
+
+.info .info__bottom .info__item {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 10px;
+  padding-bottom: 14px;
+}
+
+.info__bottom .info__item-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__item-row .info__item-icon {
+  margin-top: -5px;
+}
+
+.info__bottom .info-item__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.info-item__counter {
+  font-weight: 600;
+  color: #377ef6;
+}
+
+.info__item--extended {
+    width: 100%;
+}

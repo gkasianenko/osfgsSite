@@ -1,0 +1,43 @@
+.tags__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags__wrapper > * + * {
+  margin-left: 10px;
+}
+
+.tag__filter-icon,
+.tag__add-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e9ecf3;
+  border-radius: 14px;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.tag__filter-icon {
+  padding: 8px;
+}
+
+.tag__add-icon {
+  padding: 12px;
+}
+
+.tag__item {
+  padding: 13px 14px;
+
+  background: #e9ecf3;
+  border-radius: 14px;
+
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 10px;
+}

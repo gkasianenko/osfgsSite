@@ -1,0 +1,31 @@
+.info {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.info__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__wrapper > * + * {
+  margin-top: 24px;
+}
+
+.info .info__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .info__top > * + * {
+  margin-top: 24px;
+}
+
+.info__bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__bottom-row > * {
+    width: 47.5%;
+}

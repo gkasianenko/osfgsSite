@@ -1,0 +1,47 @@
+.header__profile {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header__profile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__person {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.header__person > * + * {
+  margin-left: 15px;
+}
+
+.header__notification {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__location {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__location::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 9px;
+
+  width: 10px;
+  height: 10px;
+  background-image: url(.././img/svg/events/arrow-down.svg);
+  background-repeat: no-repeat;
+}
