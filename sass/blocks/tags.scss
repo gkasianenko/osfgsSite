@@ -41,3 +41,23 @@
   line-height: 1;
   margin-bottom: 10px;
 }
+
+.tag__item--add {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.tag__item--add > * + * {
+  margin-left: 10px;
+}
+
+.location-tags .tag__item {
+  margin-right: 10px;
+}
+
+
+.location-tags .tags__wrapper > * + * {
+  margin-left: 0;
+}

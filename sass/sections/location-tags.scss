@@ -1,0 +1,55 @@
+.location-tags {
+  
+
+  margin-top: -250px;
+  
+  
+}
+
+.location .container{
+    background: #fafafc;
+    box-shadow: 0 16px 28px #fafafc, 0 0 28px rgba(6, 10, 29, 0.05);
+}
+
+.location-tags .container {
+  position: relative;
+  
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  
+  
+  
+}
+
+.location-tags .container::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 160px;
+  background: url(.././img/svg/location/swipe.svg);
+
+  width: 44px;
+  height: 4px;
+}
+
+.location-tags .search__input {
+  padding-top: 34px;
+  padding-bottom: 16px;
+
+  
+}
+
+.location-tags .search__input::after {
+  top: 43px;
+}
+
+.location-tags .location__tags {
+  
+  padding-bottom: 6px;
+
+  border-bottom: 4px solid #f0f2f6;
+}
+
+.location-tags__content {
+    
+}

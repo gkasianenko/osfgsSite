@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=b405d8e3-4da7-4f32-b701-b6bae40047f9" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="geolocated_map.js" type="text/javascript"></script>
+    <style>
+        #map {
+            width: 100%; height: 100%; padding: 0; margin: 0;
+        }
+    </style>
+    <title>Интересное рядом</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__profile">
+                <div class="header__profile-wrapper">
+                    <div class="header__person">
+                        <img src="./img/main/profile-img.png" alt="Иконка рофиля">
+                        
+                    </div>
+                    <div class="header__location">
+                        <p>Краснодар</p>
+                    </div>
+                    <div class="header__notification menu-icon new-note">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82C17.9399 6.47 16.5599 4.44 14.5699 3.49C14.0499 2.57 13.0899 2 11.9899 2C10.8999 2 9.91994 2.59 9.39994 3.52C7.44994 4.49 6.09994 6.5 6.09994 8.82V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z" fill="black" fill-opacity="0.9"/>
+                            <path d="M14.8299 20.01C14.4099 21.17 13.2999 22 11.9999 22C11.2099 22 10.4299 21.68 9.87993 21.11C9.55993 20.81 9.31993 20.41 9.17993 20C9.30993 20.02 9.43993 20.03 9.57993 20.05C9.80993 20.08 10.0499 20.11 10.2899 20.13C10.8599 20.18 11.4399 20.21 12.0199 20.21C12.5899 20.21 13.1599 20.18 13.7199 20.13C13.9299 20.11 14.1399 20.1 14.3399 20.07C14.4999 20.05 14.6599 20.03 14.8299 20.01Z" fill="black" fill-opacity="0.9"/>
+                            </svg>
+                    </div>
+                </div>
+                <div class="header__address">
+                    <p>ул. Брюсова, 21</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="location">
+        <section class="map">
+            <div class="container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A295e4c6210252c700bcaf50e09a6a0de8b2c136ae0cb318cf6e315639d3fd3d6&amp;source=constructor" width="100%" height="640" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section class="location-tags">
+            <div class="container">
+                <div class="location-tags__content">
+                    <div class="search__input">
+                        <input type="text" placeholder="Поиск по местам...">
+                        <label for=""></label>
+                        
+                    </div>
+                    <div class="location__tags">
+                        <div class="tags__wrapper">
+                            
+                            <div class="tag__item">
+                                <p>Комната матери и ребёнка</p>
+                            </div>
+                            <div class="tag__item">
+                                <p>Туалет</p>
+                            </div>
+                            <div class="tag__item">
+                                <p>Поддержка слабослышащих</p>
+                            </div>
+                            <div class="tag__item">
+                                <p>ОСФГС</p>
+                            </div>
+                            <div class="tag__item tag__item--add">
+                                <p>Добавить</p>
+                                <svg width="12" height="12" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 8C0.447715 8 0 8.44772 0 9C0 9.55228 0.447715 10 1 10V8ZM17 10C17.5523 10 18 9.55228 18 9C18 8.44772 17.5523 8 17 8V10ZM1 10H17V8H1V10Z" fill="#9EA4B9"/>
+                                    <path d="M8 17C8 17.5523 8.44772 18 9 18C9.55228 18 10 17.5523 10 17L8 17ZM10 1C10 0.447714 9.55228 -2.41411e-08 9 0C8.44771 2.41411e-08 8 0.447714 8 1L10 1ZM10 17L10 1L8 1L8 17L10 17Z" fill="#9EA4B9"/>
+                                    </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="recent-places">
+            <div class="container">
+                <div class="recent-places__title">
+                    <h1>Недавние места</h1>
+                </div>
+                <div class="recent-places__wrapper">
+                    <div class="recent-places__item">
+                        <div class="recent-places__item-wrapper">
+                            <div class="recent-places__img">
+                                <img src="./img/location/tea.jpg" alt="чай">
+                                <div class="recent-places__rating">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5267 1.75995L10.48 4.28661C10.4734 4.63328 10.6934 5.09328 10.9734 5.29995L12.6267 6.55328C13.6867 7.35328 13.5134 8.33328 12.2467 8.73328L10.0934 9.40661C9.73335 9.51995 9.35335 9.91328 9.26002 10.2799L8.74669 12.2399C8.34002 13.7866 7.32668 13.9399 6.48668 12.5799L5.31335 10.6799C5.10002 10.3333 4.59335 10.0733 4.19335 10.0933L1.96668 10.2066C0.373351 10.2866 -0.0799823 9.36661 0.960018 8.15328L2.28002 6.61995C2.52668 6.33328 2.64002 5.79995 2.52668 5.43995L1.84668 3.27995C1.45335 2.01328 2.16002 1.31328 3.42002 1.72661L5.38668 2.37328C5.72002 2.47995 6.22002 2.40661 6.50002 2.19995L8.55335 0.719948C9.66669 -0.0733855 10.5534 0.393281 10.5267 1.75995Z" fill="#FFD600"/>
+                                        </svg>
+                                    <div class="recent-places__review">4.8</div>
+                                </div>
+                            </div>
+                            <div class="recent-places__info">
+                                <div class="recent-places__place">
+                                    <div class="recent-places__title">
+                                        <h3 class="title-h3">Чайная комната</h3>
+                                    </div>
+                                    <div class="recent-places__location">
+                                        <div class="recent-places__category">
+                                            <p>Кафе</p>
+                                        </div>
+                                        <div class="recent-places__distance">
+                                            <p>1 км</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-places__working">
+                                    <div class="recent-places__open open">
+                                        <p>Открыто</p>
+                                    </div>
+                                    <div class="recent-places__time">
+                                        <p>Закроется в 23:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-places__item">
+                        <div class="recent-places__item-wrapper">
+                            <div class="recent-places__img">
+                                <img src="./img/location/child.jpg" alt="чай">
+                                <div class="recent-places__rating">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5267 1.75995L10.48 4.28661C10.4734 4.63328 10.6934 5.09328 10.9734 5.29995L12.6267 6.55328C13.6867 7.35328 13.5134 8.33328 12.2467 8.73328L10.0934 9.40661C9.73335 9.51995 9.35335 9.91328 9.26002 10.2799L8.74669 12.2399C8.34002 13.7866 7.32668 13.9399 6.48668 12.5799L5.31335 10.6799C5.10002 10.3333 4.59335 10.0733 4.19335 10.0933L1.96668 10.2066C0.373351 10.2866 -0.0799823 9.36661 0.960018 8.15328L2.28002 6.61995C2.52668 6.33328 2.64002 5.79995 2.52668 5.43995L1.84668 3.27995C1.45335 2.01328 2.16002 1.31328 3.42002 1.72661L5.38668 2.37328C5.72002 2.47995 6.22002 2.40661 6.50002 2.19995L8.55335 0.719948C9.66669 -0.0733855 10.5534 0.393281 10.5267 1.75995Z" fill="#FFD600"/>
+                                        </svg>
+                                    <div class="recent-places__review">4.8</div>
+                                </div>
+                            </div>
+                            <div class="recent-places__info">
+                                <div class="recent-places__place">
+                                    <div class="recent-places__title">
+                                        <h3 class="title-h3">Комната матери и ребёнка</h3>
+                                    </div>
+                                    <div class="recent-places__location">
+                                        <div class="recent-places__category">
+                                            <p>Комната отдыха</p>
+                                        </div>
+                                        <div class="recent-places__distance">
+                                            <p>2 км</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-places__working">
+                                    <div class="recent-places__open open">
+                                        <p>Открыто</p>
+                                    </div>
+                                    <div class="recent-places__time">
+                                        <p>Закроется в 23:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-places__item">
+                        <div class="recent-places__item-wrapper">
+                            <div class="recent-places__img">
+                                <img src="./img/location/town.jpg" alt="чай">
+                                <div class="recent-places__rating">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5267 1.75995L10.48 4.28661C10.4734 4.63328 10.6934 5.09328 10.9734 5.29995L12.6267 6.55328C13.6867 7.35328 13.5134 8.33328 12.2467 8.73328L10.0934 9.40661C9.73335 9.51995 9.35335 9.91328 9.26002 10.2799L8.74669 12.2399C8.34002 13.7866 7.32668 13.9399 6.48668 12.5799L5.31335 10.6799C5.10002 10.3333 4.59335 10.0733 4.19335 10.0933L1.96668 10.2066C0.373351 10.2866 -0.0799823 9.36661 0.960018 8.15328L2.28002 6.61995C2.52668 6.33328 2.64002 5.79995 2.52668 5.43995L1.84668 3.27995C1.45335 2.01328 2.16002 1.31328 3.42002 1.72661L5.38668 2.37328C5.72002 2.47995 6.22002 2.40661 6.50002 2.19995L8.55335 0.719948C9.66669 -0.0733855 10.5534 0.393281 10.5267 1.75995Z" fill="#FFD600"/>
+                                        </svg>
+                                    <div class="recent-places__review">4.8</div>
+                                </div>
+                            </div>
+                            <div class="recent-places__info">
+                                <div class="recent-places__place">
+                                    <div class="recent-places__title">
+                                        <h3 class="title-h3">ОСФГС в Краснодаре</h3>
+                                    </div>
+                                    <div class="recent-places__location">
+                                        <div class="recent-places__category">
+                                            <p>Организация</p>
+                                        </div>
+                                        <div class="recent-places__distance">
+                                            <p>2 км</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-places__working">
+                                    <div class="recent-places__open open">
+                                        <p>Открыто</p>
+                                    </div>
+                                    <div class="recent-places__time">
+                                        <p>Закроется в 23:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav id="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <a  href="./index.html" class="nav-link ">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8598 6.36997L12.9298 0.829971C11.8598 -0.0300287 10.1298 -0.0300287 9.06978 0.819971L2.13978 6.36997C1.35978 6.98997 0.859777 8.29997 1.02978 9.27997L2.35978 17.24C2.59978 18.66 3.95978 19.81 5.39978 19.81H16.5998C18.0298 19.81 19.3998 18.65 19.6398 17.24L20.9698 9.27997C21.1298 8.29997 20.6298 6.98997 19.8598 6.36997ZM10.9998 13.5C9.61978 13.5 8.49978 12.38 8.49978 11C8.49978 9.61997 9.61978 8.49997 10.9998 8.49997C12.3798 8.49997 13.4998 9.61997 13.4998 11C13.4998 12.38 12.3798 13.5 10.9998 13.5Z" fill="#AEC3E9"/>
+                        </svg>
+                    <p>Главная</p>
+                </a>
+                <a  href="./events.html" class="nav-link ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29004 6.29C7.87004 6.29 7.54004 5.95 7.54004 5.54V2.75C7.54004 2.34 7.87004 2 8.29004 2C8.71004 2 9.04004 2.34 9.04004 2.75V5.53C9.04004 5.95 8.71004 6.29 8.29004 6.29Z" fill="#AEC3E9"/>
+                        <path d="M15.71 6.29C15.29 6.29 14.96 5.95 14.96 5.54V2.75C14.96 2.33 15.3 2 15.71 2C16.13 2 16.46 2.34 16.46 2.75V5.53C16.46 5.95 16.13 6.29 15.71 6.29Z" fill="#AEC3E9"/>
+                        <path d="M19.57 4.5C18.91 4.01 17.96 4.48 17.96 5.31V5.41C17.96 6.58 17.12 7.66 15.95 7.78C14.6 7.92 13.46 6.86 13.46 5.54V4.5C13.46 3.95 13.01 3.5 12.46 3.5H11.54C10.99 3.5 10.54 3.95 10.54 4.5V5.54C10.54 6.33 10.13 7.03 9.51 7.42C9.42 7.48 9.32 7.53 9.22 7.58C9.13 7.63 9.03 7.67 8.92 7.7C8.8 7.74 8.67 7.77 8.53 7.78C8.37 7.8 8.21 7.8 8.05 7.78C7.91 7.77 7.78 7.74 7.66 7.7C7.56 7.67 7.46 7.63 7.36 7.58C7.26 7.53 7.16 7.48 7.07 7.42C6.44 6.98 6.04 6.22 6.04 5.41V5.31C6.04 4.54 5.22 4.08 4.57 4.41C4.56 4.42 4.55 4.42 4.54 4.43C4.5 4.45 4.47 4.47 4.43 4.5C4.4 4.53 4.36 4.55 4.33 4.58C4.05 4.8 3.8 5.05 3.59 5.32C3.48 5.44 3.39 5.57 3.31 5.7C3.3 5.71 3.29 5.72 3.28 5.74C3.19 5.87 3.11 6.02 3.04 6.16C3.02 6.18 3.01 6.19 3.01 6.21C2.95 6.33 2.89 6.45 2.85 6.58C2.82 6.63 2.81 6.67 2.79 6.72C2.73 6.87 2.69 7.02 2.65 7.17C2.61 7.31 2.58 7.46 2.56 7.61C2.54 7.72 2.53 7.83 2.52 7.95C2.51 8.09 2.5 8.23 2.5 8.37V17.13C2.5 19.82 4.68 22 7.37 22H16.63C19.32 22 21.5 19.82 21.5 17.13V8.37C21.5 6.78 20.74 5.39 19.57 4.5ZM12 17.42H7.36C6.95 17.42 6.61 17.08 6.61 16.67C6.61 16.25 6.95 15.91 7.36 15.91H12C12.42 15.91 12.75 16.25 12.75 16.67C12.75 17.08 12.42 17.42 12 17.42ZM14.78 13.71H7.36C6.95 13.71 6.61 13.37 6.61 12.96C6.61 12.54 6.95 12.2 7.36 12.2H14.78C15.2 12.2 15.54 12.54 15.54 12.96C15.54 13.37 15.2 13.71 14.78 13.71Z" fill="#AEC3E9"/>
+                        </svg>
+                    <p>События</p>
+                </a>
+                <a  href="./location.html" class="nav-link active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.51 11.22L8.31 2.39C8.26 2.16 8.05 2 7.81 2C4.6 2 2 4.6 2 7.81V13.51C2 13.85 2.33 14.1 2.66 14L10.16 11.83C10.42 11.76 10.58 11.49 10.51 11.22Z" fill="#377EF6"/>
+                        <path d="M11.12 13.6801C11.05 13.4001 10.76 13.2301 10.48 13.3101L2.37 15.6701C2.15 15.7401 2 15.9401 2 16.1701V16.1901C2 19.4001 4.6 22.0001 7.81 22.0001H12.53C12.86 22.0001 13.11 21.6901 13.03 21.3601L11.12 13.6801Z" fill="#377EF6"/>
+                        <path d="M16.1901 2H10.4401C10.1101 2 9.86007 2.31 9.94007 2.64L14.6801 21.61C14.7401 21.84 14.9401 22 15.1801 22H16.1801C19.4001 22 22.0001 19.4 22.0001 16.19V7.81C22.0001 4.6 19.4001 2 16.1901 2Z" fill="#377EF6"/>
+                        </svg>
+                    <p>Карта</p>
+                </a>
+                <a href="" class="nav-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75C7.25 9.32 9.26 11.4 11.88 11.49C11.96 11.48 12.04 11.48 12.1 11.49C12.12 11.49 12.13 11.49 12.15 11.49C12.16 11.49 12.16 11.49 12.17 11.49C14.73 11.4 16.74 9.32 16.75 6.75C16.75 4.13 14.62 2 12 2Z" fill="#AEC3E9"/>
+                        <path d="M17.08 14.15C14.29 12.29 9.73996 12.29 6.92996 14.15C5.65996 15 4.95996 16.15 4.95996 17.38C4.95996 18.61 5.65996 19.75 6.91996 20.59C8.31996 21.53 10.16 22 12 22C13.84 22 15.68 21.53 17.08 20.59C18.34 19.74 19.04 18.6 19.04 17.36C19.03 16.13 18.34 14.99 17.08 14.15Z" fill="#AEC3E9"/>
+                        </svg>
+                    <p>Профиль</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
