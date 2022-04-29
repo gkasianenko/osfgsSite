@@ -9,18 +9,22 @@
 @import "./blocks/menu.scss";
 @import "./blocks/tags.scss";
 @import "./blocks/recent-place-item.scss";
+@import "./blocks/upcoming-events.scss";
 
 //Sections
 @import "./sections/header.scss";
 @import "./sections/info.scss";
 @import "./sections/news.scss";
 @import "./sections/search.scss";
-@import "./sections/upcoming-events.scss";
+@import "./sections/applications.scss";
+
 @import "./sections/category-pattern.scss";
 @import "./sections/map.scss";
 @import "./sections/location-tags.scss";
 @import "./sections/recent-places.scss";
 @import "./sections/news-item-img.scss";
+@import "./sections/news-item.scss";
+@import "./sections/no-application.scss";
 
 //Utilities
 @import "./utilities/titles.scss";

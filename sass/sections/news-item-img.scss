@@ -1,8 +1,19 @@
 .news__img {
   padding-bottom: 12px;
 }
+
+.news__img-wrapper{
+  margin-bottom: 12px;
+}
 .news__img-wrapper > * + * {
   margin-top: 20px;
+}
+.news__text-img{
+  margin-top: 31px !important;
+  margin-bottom: 24px;
+}
+.news__text-img .news__img-wrapper > * + * {
+  margin-top: 13px;
 }
 
 .news__author,

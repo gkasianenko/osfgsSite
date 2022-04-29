@@ -1,0 +1,31 @@
+.news__text-wrapper > * + * {
+  margin-top: 14px;
+}
+
+.news__text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.news__text p.news__text-bold {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.news__text a {
+  display: block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+
+  text-decoration-line: underline;
+
+  color: #377ef6;
+}
+
+.news__text .news__creds p {
+  font-size: 12px ;
+}

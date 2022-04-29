@@ -19,3 +19,12 @@
     color: #9ea4b9;
   }
 }
+
+.button--bold{
+  background: #377EF6;
+  color: #fff;
+
+  & a {
+    color: #fff ;
+  }
+}

@@ -264,6 +264,83 @@ legend {
 .location-tags .tags__wrapper > * + * {
   margin-left: 0; }
 
+.upcoming-events {
+  padding-top: 14px;
+  padding-bottom: 24px; }
+
+.upcoming-events .container > * + * {
+  margin-top: 16px; }
+
+.upcoming-events__wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.upcoming-events__wrapper > * + * {
+  margin-top: 20px; }
+
+.upcoming-event__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px;
+  min-height: 118px;
+  font-weight: 500;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.9); }
+
+.upcoming-event__item > * + * {
+  margin-top: 16px; }
+
+.upcoming-event__item-info > * + * {
+  margin-top: 8px; }
+
+.upcoming-event__item-category {
+  font-size: 14px; }
+
+.upcoming-event__item-name {
+  font-size: 16px;
+  line-height: 1.3; }
+
+.upcoming-event__item-row {
+  display: flex;
+  justify-content: space-between; }
+
+.upcoming-event__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.upcoming-event__item-info {
+  width: 55%; }
+
+.upcoming-event__item.tennis .upcoming-event__item-icon {
+  background-color: #f6f2ff; }
+
+.upcoming-event__item.tennis .upcoming-event__item-category {
+  color: #685cf4; }
+
+.upcoming-event__item.checkmates .upcoming-event__item-icon {
+  background-color: #dbf5e2; }
+
+.upcoming-event__item.checkmates .upcoming-event__item-category {
+  color: #34a853; }
+
+.upcoming-event__item-date {
+  font-weight: 400;
+  font-size: 12px; }
+
+.upcoming-event__item-date > * + * {
+  margin-top: 2px; }
+
+.upcoming-event__item-application-date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #9ea4b9; }
+
 .header__profile {
   padding-top: 12px;
   padding-bottom: 12px; }
@@ -309,17 +386,24 @@ legend {
   line-height: 1;
   color: rgba(0, 0, 0, 0.6); }
 
-#news-item .header__wrapper {
+#news-item .header__wrapper,
+#no-ap .header__wrapper,
+#new-ap .header__wrapper {
   padding: 23px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-#news-item .header__title {
+#news-item .header__title,
+#no-ap .header__title,
+#new-ap .header__title {
   font-weight: 500;
   text-align: center;
-  margin-right: 50%;
-  transform: translateX(50%); }
+  margin-right: auto;
+  margin-left: auto; }
+
+.header__back-arrow {
+  width: 30px; }
 
 .info {
   padding-top: 16px;
@@ -431,70 +515,31 @@ legend {
   font-weight: 500;
   line-height: 1; }
 
-.upcoming-events {
-  padding-top: 14px;
-  padding-bottom: 24px; }
+.applications {
+  padding-top: 12px; }
 
-.upcoming-events .container > * + * {
+.applications__wrapper > * + * {
   margin-top: 16px; }
 
-.upcoming-events__wrapper {
+.applications__header > * + * {
+  margin-top: 10px; }
+
+.applications__title {
   display: flex;
-  flex-direction: column; }
+  align-items: center; }
 
-.upcoming-events__wrapper > * + * {
-  margin-top: 20px; }
+.applications__title > * + * {
+  margin-left: 6px; }
 
-.upcoming-event__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 14px;
-  min-height: 118px;
-  font-weight: 500;
-  background: #fff;
-  color: rgba(0, 0, 0, 0.9); }
+.applications__title-counter {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #377ef6; }
 
-.upcoming-event__item-info > * + * {
-  margin-top: 8px; }
-
-.upcoming-event__item-category {
-  font-size: 14px; }
-
-.upcoming-event__item-name {
-  font-size: 16px;
-  line-height: 1.3; }
-
-.upcoming-event__item-row {
-  display: flex;
-  justify-content: space-between; }
-
-.upcoming-event__item-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; }
-
-.upcoming-event__item-info {
-  width: 55%; }
-
-.upcoming-event__item.tennis .upcoming-event__item-icon {
-  background-color: #f6f2ff; }
-
-.upcoming-event__item.tennis .upcoming-event__item-category {
-  color: #685cf4; }
-
-.upcoming-event__item.checkmates .upcoming-event__item-icon {
-  background-color: #dbf5e2; }
-
-.upcoming-event__item.checkmates .upcoming-event__item-category {
-  color: #34a853; }
-
-.upcoming-event__item-date {
-  font-weight: 400;
-  font-size: 12px; }
+.applications__info {
+  font-size: 14px;
+  line-height: 1.35; }
 
 .category-pattern {
   padding-bottom: 24px; }
@@ -672,8 +717,18 @@ legend {
 .news__img {
   padding-bottom: 12px; }
 
+.news__img-wrapper {
+  margin-bottom: 12px; }
+
 .news__img-wrapper > * + * {
   margin-top: 20px; }
+
+.news__text-img {
+  margin-top: 31px !important;
+  margin-bottom: 24px; }
+
+.news__text-img .news__img-wrapper > * + * {
+  margin-top: 13px; }
 
 .news__author,
 .news__author::before {
@@ -685,6 +740,67 @@ legend {
 
 .news__author::before {
   content: "Источник: "; }
+
+.news__text-wrapper > * + * {
+  margin-top: 14px; }
+
+.news__text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35; }
+
+.news__text p.news__text-bold {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3; }
+
+.news__text a {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-decoration-line: underline;
+  color: #377ef6; }
+
+.news__text .news__creds p {
+  font-size: 12px; }
+
+body#no-ap {
+  position: relative; }
+
+.no-application {
+  padding-top: 56px;
+  text-align: center; }
+
+.no-application__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.no-application__title > * + * {
+  margin-top: 8px; }
+
+.no-application__info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.35;
+  width: 60%; }
+
+.no-application__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 95px; }
+
+.no-application__wrapper > * + * {
+  margin-top: 47px; }
+
+.no-application__button {
+  position: fixed;
+  width: 21.5%;
+  bottom: 24px; }
 
 .title-h1 {
   font-weight: 600;
@@ -726,5 +842,11 @@ legend {
   background: #e9ecf3; }
   .button--thin a {
     color: #9ea4b9; }
+
+.button--bold {
+  background: #377EF6;
+  color: #fff; }
+  .button--bold a {
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

@@ -30,6 +30,9 @@
   color: rgba(0, 0, 0, 0.9);
 }
 
+.upcoming-event__item > * + * {
+  margin-top: 16px;
+}
 .upcoming-event__item-info > * + * {
   margin-top: 8px;
 }
@@ -79,4 +82,16 @@
 .upcoming-event__item-date {
   font-weight: 400;
   font-size: 12px;
+}
+
+.upcoming-event__item-date > * + * {
+  margin-top: 2px;
+}
+
+.upcoming-event__item-application-date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+
+  color: #9ea4b9;
 }

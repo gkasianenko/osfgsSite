@@ -1,0 +1,33 @@
+.applications{
+    padding-top: 12px;
+}
+
+.applications__wrapper > * + * {
+  margin-top: 16px;
+}
+
+.applications__header > * + * {
+  margin-top: 10px;
+}
+
+.applications__title {
+  display: flex;
+  align-items: center;
+}
+
+.applications__title > * + * {
+  margin-left: 6px;
+}
+
+.applications__title-counter {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+
+  color: #377ef6;
+}
+
+.applications__info {
+  font-size: 14px;
+  line-height: 1.35;
+}
