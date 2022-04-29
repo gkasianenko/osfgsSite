@@ -1,0 +1,20 @@
+.news__img {
+  padding-bottom: 12px;
+}
+.news__img-wrapper > * + * {
+  margin-top: 20px;
+}
+
+.news__author,
+.news__author::before {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.35;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+.news__author::before {
+  content: "Источник: ";
+}
