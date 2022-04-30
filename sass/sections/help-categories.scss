@@ -1,0 +1,41 @@
+.help__item{
+    display: flex;
+    align-items: flex-start;
+}
+
+.help__support {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  padding: 14px;
+  background-color: #fff;
+}
+
+.help__messages {
+  display: flex;
+  align-items: center;
+
+  color: #000;
+}
+
+.help__messages > * + * {
+  margin-left: 12px;
+}
+
+.help__messages-title {
+  display: flex;
+}
+
+.help__messages-title > * + * {
+  margin-left: 6px;
+}
+
+.help__counter {
+  font-weight: 500;
+  color: #f85f3e;
+}
+
+
+
+.help__categories-wrapper > * + * {
+  margin-top: 24px;
+}

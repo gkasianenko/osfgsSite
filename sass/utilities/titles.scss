@@ -6,12 +6,23 @@
   color: rgba(0, 0, 0, 0.9);
 }
 
+.title-h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: -0.02em;
+
+}
+
 .title-h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
 
   letter-spacing: -0.02em;
+
+  
 }
 
 .title-fade {
@@ -32,5 +43,3 @@
 .align-center {
   align-items: center;
 }
-
-

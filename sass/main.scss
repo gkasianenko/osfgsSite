@@ -10,6 +10,8 @@
 @import "./blocks/tags.scss";
 @import "./blocks/recent-place-item.scss";
 @import "./blocks/upcoming-events.scss";
+@import "./blocks/help-item.scss";
+@import "./blocks/questions.scss";
 
 //Sections
 @import "./sections/header.scss";
@@ -17,7 +19,6 @@
 @import "./sections/news.scss";
 @import "./sections/search.scss";
 @import "./sections/applications.scss";
-
 @import "./sections/category-pattern.scss";
 @import "./sections/map.scss";
 @import "./sections/location-tags.scss";
@@ -25,6 +26,9 @@
 @import "./sections/news-item-img.scss";
 @import "./sections/news-item.scss";
 @import "./sections/no-application.scss";
+@import "./sections/help-categories.scss";
+@import "./sections/help-support-chat.scss";
+@import "./sections/chat.scss";
 
 //Utilities
 @import "./utilities/titles.scss";
