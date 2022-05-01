@@ -42,8 +42,11 @@
 }
 
 .upcoming-event__item-name {
+  display: block;
   font-size: 16px;
   line-height: 1.3;
+
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .upcoming-event__item-row {
@@ -94,4 +97,35 @@
   line-height: 1;
 
   color: #9ea4b9;
+}
+
+#event .upcoming-event__item {
+  padding: 16px 0;
+  background: unset;
+}
+
+#event .upcoming-event__item-category {
+  font-size: 16px;
+}
+
+#event .upcoming-event__item-name {
+  font-size: 20px;
+}
+
+#event .upcoming-event__item-date {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#event .upcoming-event__item-date::before {
+  content: "";
+  display: block;
+  margin-right: 8px;
+
+  width: 24px;
+  height: 24px;
+
+  background: url(.././img/svg/event/note.svg);
 }

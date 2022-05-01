@@ -56,7 +56,9 @@
 }
 
 .header__wrapper-secondary {
-  padding: 23px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,19 +75,17 @@
   width: 30px;
 }
 
-#support-chat .header__wrapper-secondary{
+#support-chat .header__wrapper-secondary {
   justify-content: space-between;
 }
 
-#support-chat .header__back-arrow{
+#support-chat .header__back-arrow {
   width: 22px;
 }
 
-
-.header__support-content{
+.header__support-content {
   display: flex;
   align-items: center;
-  
 }
 
 .header__support-title .title-h2 {

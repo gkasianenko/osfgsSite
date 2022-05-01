@@ -1,0 +1,91 @@
+.event-info {
+  padding-bottom: 24px;
+}
+
+.event-info__wrapper > * + * {
+  margin-top: 24px;
+}
+
+.event-info__desc {
+  font-size: 14px;
+}
+
+.event-info__place-coords > * + * {
+  margin-top: 8px;
+}
+
+.event-info__address {
+  font-size: 14px;
+}
+
+.event-info__city {
+  font-size: 14px;
+
+  color: #9ea4b9;
+}
+
+.event-info__title {
+  margin-bottom: 16px;
+}
+
+.event-info__map-button {
+  display: block;
+}
+
+.event-info__organizators-wrapper > * + * {
+  margin-top: 20px;
+}
+
+.organizator-item {
+  display: flex;
+  align-items: center;
+}
+
+.organizator-item > * + * {
+  margin-left: 14px;
+}
+
+.organizators-item__text {
+  font-size: 14px;
+  width: 82%;
+}
+
+.event-photo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.event-photo__title {
+  display: flex;
+  align-items: center;
+}
+
+.event-photo__more {
+  font-size: 12px;
+  line-height: 1;
+
+  color: #377ef6;
+}
+
+.event-photo__title > * + * {
+  margin-left: 6px;
+}
+
+#event .event-photo__counter {
+  color: #9ea4b9;
+}
+
+#event .swiper-slide img {
+  border-radius: 17px;
+}
+
+.event-photo__wrapper {
+  margin-bottom: 16px;
+}
+
+.event-photo__button {
+  display: block;
+}
