@@ -12,12 +12,13 @@
 @import "./blocks/upcoming-events.scss";
 @import "./blocks/help-item.scss";
 @import "./blocks/questions.scss";
+@import "./blocks/inputs.scss";
+@import "./blocks/search.scss";
 
 //Sections
 @import "./sections/header.scss";
 @import "./sections/info.scss";
 @import "./sections/news.scss";
-@import "./sections/search.scss";
 @import "./sections/applications.scss";
 @import "./sections/category-pattern.scss";
 @import "./sections/map.scss";
@@ -30,6 +31,12 @@
 @import "./sections/help-support-chat.scss";
 @import "./sections/chat.scss";
 @import "./sections/event-info.scss";
+@import "./sections/loading-page.scss";
+@import "./sections/login.scss";
+@import "./sections/register-inputs.scss";
+@import "./sections/phone-confirm.scss";
+@import "./sections/register-place.scss";
+@import "./sections/spec-choice.scss";
 
 //Utilities
 @import "./utilities/titles.scss";

@@ -1,0 +1,82 @@
+.login-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    height: 28px;
+    border-bottom: 1px solid rgba(158, 164, 185, 0.3);
+
+    font-size: 16px;
+
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+  }
+
+  & input::placeholder {
+    font-size: 16px;
+    line-height: 1;
+
+    color: #9ea4b9;
+  }
+
+  & label {
+    font-size: 12px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.login-input > * + * {
+  margin-top: 4px;
+}
+
+.login__inputs-content > * + * {
+  margin-top: 28px;
+}
+
+.login-input__eye {
+  position: absolute;
+  right: 0;
+  top: 16px;
+
+  cursor: pointer;
+}
+
+.login__inputs-button-wrapper > * + * {
+  margin-top: 16px;
+}
+
+.login__inputs-buttons {
+  padding-bottom: 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  & a {
+    display: block;
+  }
+}
+
+.phone-confirm__input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.phone-confirm__input input {
+  padding: 12px 20px;
+  border-bottom: 1px solid blue;
+  background: transparent;
+
+  width: 88px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.phone-confirm__input input::placeholder {
+  font-size: 20px;
+}

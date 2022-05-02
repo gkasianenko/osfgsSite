@@ -1,0 +1,57 @@
+.phone-confirm {
+  padding-top: 34px;
+  text-align: center;
+}
+.phone-confirm__text > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone-confirm__wrapper > * + * {
+  margin-top: 32px;
+}
+
+.phone-confirm__text > * + * {
+  margin-top: 12px;
+}
+
+.phone-confirm__title {
+  width: 84%;
+}
+
+.phone-confirm__title .title-h2 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.phone-confirm__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+
+  width: 58%;
+
+  color: rgba(0, 0, 0, 0.6);
+  & span {
+    color: #377ef6;
+  }
+}
+
+.phone-confirm__code > * + * {
+  margin-top: 24px;
+}
+
+.phone-confirm__request {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 1.35;
+  width: 60%;
+
+  color: rgba(0, 0, 0, 0.6);
+
+  & span {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+  }
+}

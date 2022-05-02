@@ -1,0 +1,45 @@
+.spec-choice {
+  padding-top: 32px;
+}
+
+.spec-choice__wrapper > * + * {
+  margin-top: 20px;
+}
+
+.spec-item {
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: #fff;
+}
+
+.spec-item--checked {
+  background: #377ef6;
+
+  & .spec-item__info {
+    color: #f8f9fb;
+  }
+
+  & .spec-item__title {
+    color: #fff;
+  }
+
+  & svg path {
+    fill: white;
+  }
+  & svg rect {
+    fill: white;
+  }
+}
+
+.spec-item__text > * + * {
+  margin-top: 8px;
+}
+
+.spec-item__info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.35;
+}
