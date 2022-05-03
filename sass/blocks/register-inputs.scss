@@ -52,6 +52,10 @@
   }
 }
 
+.register-inputs__next .container > * + * {
+  margin-top: 12px;
+}
+
 .register-phone {
   padding-top: 16px;
 }

@@ -1,0 +1,53 @@
+#profile .main > * + * {
+  margin-top: 24px;
+}
+.profile__categories-wrapper a {
+  display: block;
+  color: rgba(0, 0, 0, 0.9);
+}
+.profile__categories-wrapper > * + * {
+  margin-top: 16px;
+}
+
+.profile-category {
+  position: relative;
+  padding: 22px;
+  background: #fff;
+  font-weight: 500;
+}
+
+.profile-category::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background: url(.././img/svg/profile/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-category__name {
+  padding-left: 46px;
+}
+
+.profile-category__icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  
+  background-color: #f8f9fb;
+  border-radius: 50px;
+}

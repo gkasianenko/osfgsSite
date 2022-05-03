@@ -14,6 +14,9 @@
 @import "./blocks/questions.scss";
 @import "./blocks/inputs.scss";
 @import "./blocks/search.scss";
+@import "./blocks/register-inputs.scss";
+@import "./blocks/welcome-message.scss";
+@import "./blocks/profile-card.scss";
 
 //Sections
 @import "./sections/header.scss";
@@ -33,10 +36,10 @@
 @import "./sections/event-info.scss";
 @import "./sections/loading-page.scss";
 @import "./sections/login.scss";
-@import "./sections/register-inputs.scss";
 @import "./sections/phone-confirm.scss";
 @import "./sections/register-place.scss";
 @import "./sections/spec-choice.scss";
+@import "./sections/profile-categories.scss";
 
 //Utilities
 @import "./utilities/titles.scss";

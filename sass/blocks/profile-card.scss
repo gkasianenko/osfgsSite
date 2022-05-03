@@ -1,0 +1,37 @@
+.profile-card {
+  padding: 14px;
+  background: #fff;
+}
+
+.profile-card > * + * {
+  margin-top: 16px;
+}
+
+.profile-card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.profile-card__info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.profile-card__info > * + * {
+  margin-top: 8px;
+}
+
+.profile-card__person {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card__person > * + * {
+  margin-left: 12px;
+}
